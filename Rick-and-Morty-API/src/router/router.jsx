@@ -1,7 +1,8 @@
 import {createBrowserRouter} from "react-router-dom";
-import { Home } from "../layout/home/Home";
 import { Login } from "../layout/login/Login";
 import { Register } from "../layout/register/Register";
+import { Home } from "../layout/home/Home";
+import { Character } from "../layout/character/Character";
 
 
 export const rutas = createBrowserRouter([
@@ -17,10 +18,10 @@ export const rutas = createBrowserRouter([
         path: "home",
         element: <Home/>
     },
-//     {
-//         path: "detail",
-//         element: <Persona/>
-//     },
+    {
+        path: "character",
+        element: <Character/>
+    },
 //     {
 //         path: "about",
 //         element: <Persona/>

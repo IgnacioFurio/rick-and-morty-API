@@ -4,16 +4,18 @@ import Card from 'react-bootstrap/Card';
 export const InfoCard = ({ infoPj }) => {
     return (
         <>
-        {/* <h1>{JSON.stringify(data.id)}</h1> */}
-    <Card bg="info" border="warning" style={{ width: '18rem' }} className="m-2">
+    <Card bg="info" border="warning" style={{ width: '16rem' }} className="m-2">
         <Card.Img variant="top" src={infoPj.image} />
         <Card.Body>
             <Card.Title>{infoPj.name}</Card.Title>
             <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                <p>Status: {infoPj.status}</p>
+                <p>Species: {infoPj.species}</p>
+                <p>id: {infoPj.id}</p>
             </Card.Text>
-            <Button variant="success">Go somewhere</Button>
+            <div className="d-grid gap-">
+                <Button variant="success">Go somewhere</Button>
+            </div>
         </Card.Body>
     </Card>
     </>
