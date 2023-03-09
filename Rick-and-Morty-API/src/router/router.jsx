@@ -11,7 +11,7 @@ export const rutas = createBrowserRouter([
         element: <Register/>
     },
     {
-        path: "login",
+        path: "/",
         element: <Login/>
     },
     {
