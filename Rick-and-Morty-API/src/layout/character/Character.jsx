@@ -1,10 +1,9 @@
-import React from 'react'
-import { NavBar } from '../../components/Navbar'
+import React from 'react';
 
 export const Character = () => {
     return (
         <>
-            <NavBar/>
+            <h1>Character</h1>
         </>
     )
-}
+};

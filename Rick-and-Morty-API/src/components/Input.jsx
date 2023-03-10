@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import Button from 'react-bootstrap/Button';
 
 export const LoginInput = () => {
 
@@ -10,12 +11,9 @@ export const LoginInput = () => {
     };
 
     const [input, setInput] = useState(loginUser);
-    const { mail, pass} = input;
-
-    console.log(input);
+    const { usermail, password } = input;
 
     const newValue = ({target}) => {
-        console.log(input);
 
         const {name, value} = target;
 
@@ -36,7 +34,7 @@ export const LoginInput = () => {
                 placeholder="username@email.com"
                 aria-label="username@email.com"
                 aria-describedby="basic-addon2"
-                value={mail}
+                value={usermail}
                 onChange={newValue}
             />
             </InputGroup>
@@ -46,10 +44,11 @@ export const LoginInput = () => {
                 placeholder="Password"
                 aria-label="Password"
                 aria-describedby="basic-addon1"
-                value={pass}
+                value={password}
                 onChange={newValue}
                 />
             </InputGroup>
+            <Button variant="success" className='col-6'>Log In</Button>
         </>
     )
 };
